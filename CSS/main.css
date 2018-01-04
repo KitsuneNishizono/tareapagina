@@ -7,12 +7,16 @@ nav li{
 	float:left;
 	list-style: none;
 }
+nav ul li a{
+	color:white;
+}
 .first{
 	height:50px;
 	width:100%;
 	background-color: orange;
 	padding-top: none;
 }
-#field{
-	width: 500px;
+.SearchBar input{
+    height: 25px;
+    width: 400px;
 }
