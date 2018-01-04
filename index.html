@@ -9,13 +9,13 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-	<section>
+	<section class="first">
 		<nav>
 			<ul class="wrapper" id="main wrapper">
-				<li>
+				<li class="col-md-1">
 					<a href="/" title="Kittpad">Kittpad</a>
 				</li>
-				<li>
+				<li class="col-md-2">
 					<label></label>
 					<select name="category" id="category">
 						<option value="" disaled selected>Descubrir</option>
@@ -47,10 +47,10 @@
 						<option value ="26">#bts</option>
 					</select>
 				</li>
-				<li>
+				<li class="col-md-1">
 					<a href="/" title="Crear">Crear</a>
 				</li>
-				<li>
+				<li class="col-md-2">
 					<label></label>
 					<select name="comunidad" id="comunidad">
 						<option value="" disaled selected>Comunidad</option>
@@ -61,8 +61,13 @@
 						<option value ="5">#JustWriteIt</option>
 					</select>
 				</li>
-				<li></li>
-				<li>
+				<li class="col-md-4">
+					<div class="field">
+						<input type="text" name="Search_bar" id="Search_bar" placeholder="Busca historias y personas" required>
+						<link rel="icon" type="image.png" href="IMG/lupita.png"/>
+					</div>
+				</li>
+				<li class="col-md-1">
 					<a href="/" title="Perfil">Perfil</a>
 				</li>
 			</ul>
