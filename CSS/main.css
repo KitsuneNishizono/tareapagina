@@ -4,19 +4,68 @@
 	box-sizing: border-box;
 }
 nav li{
+	margin-top: 20px;
 	float:left;
 	list-style: none;
+	font-size: 20px;
+	font-weight: bold;
 }
 nav ul li a{
 	color:white;
 }
+.Kittpad{
+	padding-left: 5px;
+}
+.category{
+	padding-left: 30px;
+	width:150px;
+}
+.crear{
+	padding-left: 30px;
+}
+.comunidad{
+	padding-left: 30px;
+	width:160px;
+}
+
+.wrapper{
+	margin:0 auto;
+}
 .first{
-	height:50px;
+	margin: 0 auto;
+	height:70px;
 	width:100%;
 	background-color: orange;
-	padding-top: none;
+}
+.SearchBar{
+	padding-left: 30px;
+	padding: none;
+}
+nav li select{
+	outline:none;
+	border:none;
+	background-color: orange;
+	color:white;
+	font-weight: bold;
 }
 .SearchBar input{
     height: 25px;
-    width: 400px;
+    width: 500px;
+}
+.Perfil{
+	padding-left: 200px;
+}
+#lupita{
+	width:22px;
+	height:22px;
+	background-color: white;
+	padding-left: 0;
+}
+#category{
+	background-color: white;
+	color:black;
+}
+.button{
+	width:22px;
+	height:22px;
 }
