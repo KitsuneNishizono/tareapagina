@@ -1,167 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Inicio - Kittpad</title>
-	<link rel="icon" type="image/png" href="IMG/k.ico"/>
-	<link rel="stylesheet" href="https://gist.github.com/62045e3b4596e7b8982b6c6472ccdd65"/>
-	<link rel="stylesheet" href="CSS/main.css"/>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-</head>
-<body>
-	<section class="first">
-		<nav>
-			<ul class="wrapper" id="main wrapper">
-				<li>
-					<a href="/" title="Kittpad">Kittpad</a>
-				</li>
-				<li>
-					<label></label>
-						<select name="category" class="category">
-							<option value="" disaled selected>Descubrir</option>
-							<option value ="1" id="category">NAVEGAR</option>
-							<option value ="2" id="category">Acción</option>
-							<option value ="3" id="category">Aventura</option>
-							<option value ="4" id="category">Chick-Lit</option>
-							<option value ="5" id="category">Ciencia Ficción</option>
-							<option value ="6" id="category">Clásicos</option>
-							<option value ="7" id="category">De Todo</option>
-							<option value ="8" id="category">Espiritual</option>
-							<option value ="9" id="category">Fanfic</option>
-							<option value ="10" id="category">Fantasía</option>
-							<option value ="11" id="category">Ficción General</option>
-							<option value ="12" id="category">Historia Corta</option>
-							<option value ="13" id="category">Hombres Lobo</option>
-							<option value ="14" id="category">Humor</option>
-							<option value ="15" id="category">Misterio / Suspenso</option>
-							<option value ="16" id="category">No Ficción</option>
-							<option value ="17" id="category">Novela histórica</option>
-							<option value ="18" id="category">Novela Juvenil</option>
-							<option value ="19" id="category">Paranormal</option>
-							<option value ="20" id="category">Poesía</option>
-							<option value ="21" id="category">Romance</option>
-							<option value ="22" id="category">Terror</option>
-							<option value ="23" id="category">Vampiros</option>
-							<option value ="24" id="category">#lgbt</option>
-							<option value ="25" id="category">#wattys2017</option>
-							<option value ="26" id="category">#bts</option>
-						</select>
-					</li>
-					<li>
-						<a href="/" title="Crear" class="crear">Crear</a>
-					</li>
-					<li>
-						<label></label>
-						<select name="comunidad" class="comunidad">
-							<option value="" disaled selected>Comunidad</option>
-							<option value ="1" id="category">Clubs</option>
-							<option value ="2" id="category">Los Wattys</option>
-							<option value ="3" id="category">Concursos de escritura</option>
-							<option value ="4" id="category">Escritores</option>
-							<option value ="5" id="category">#JustWriteIt</option>
-						</select>
-					</li>
-					<li>
-						<div class="SearchBar">
-							<input type="text" name="Search_bar" id="Search_bar" placeholder="Busca historias y personas" required>
-							<button type="Submit" id="button"><input type="image" src="IMG/lupita.png" alt="Search" id="lupita"></button>
-						</div>
-					</li>
-					<li>
-						<a href="/" title="Perfil" class="Perfil">Perfil</a>
-					</li>
-				</ul>
-			</nav>	
-		</section>
-	<div class="row">
-		<section id="container">
-			<div class="fluid-container">
-				<div class="row">
-					<h2>
-					<a href="/" title="Seguir leyendo">Seguir leyendo  ></a>
-					</h2>
-				</div>
-				<div class="row">
-					<h3>Encuentra más en tu biblioteca</h3>
-				</div>
-				<div id="carousel">
-					<section>
-						<input type="radio" name="slider-select-element" id="element1" checked="checked"/>
-						<input type="radio" name="slider-select-element" id="element2"/>
-						<input type="radio" name="slider-select-element" id="element3"/>
-						<div class="fluid-container">
-							<div id="silder-container">
-								<div id="slider-box">
-									<div class="slider-element">
-										<article class="element-red">
-											<div class="row">
-												<article class="col-6">
-													<img src="IMG/cara.jpg"/>
-													<div>
-														<h4>Lorem ipsum</h4>
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In perferendis nihil ea id illum voluptatem totam at quae, harum a, voluptas, assumenda, eum facilis ipsum fugit odit dolorem magni mollitia?</p>
-													</div>
-												</article>
-											</div>
-										</article>
-									</div>
-								</div>
-								<div class="slider-element">
-									<article class="element-green">
-										<img src="IMG/cara.jpg"/>
-									</article>
-								</div>
-								<div class="slider-element">
-									<article class="element-blue">
-										<img src="IMG/cara.jpg"/>
-									</article>
-								</div>
+	<head>
+		<meta charset="UTF-8">
+		<title>Inicio - Kittpad</title>
+		<link rel="icon" type="image/png" href="IMG/k.ico"/>
+		<link rel="stylesheet" href="https://gist.github.com/62045e3b4596e7b8982b6c6472ccdd65"/>
+		<link rel="stylesheet" href="CSS/main.css"/>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	</head>
+	<body>
+		<main class="container">
+			<section class="first">
+				<nav>
+					<ul class="wrapper" id="main wrapper">
+						<li>
+							<a href="/" title="Kittpad">Kittpad</a>
+						</li>
+						<li>
+							<label>
+								<select name="category" class="category">
+									<option value="" id="category">Descubrir</option>
+									<option value ="1" id="category">NAVEGAR</option>
+									<option value ="2" id="category">Acción</option>
+									<option value ="3" id="category">Aventura</option>
+									<option value ="4" id="category">Chick-Lit</option>
+									<option value ="5" id="category">Ciencia Ficción</option>
+									<option value ="6" id="category">Clásicos</option>
+									<option value ="7" id="category">De Todo</option>
+									<option value ="8" id="category">Espiritual</option>
+									<option value ="9" id="category">Fanfic</option>
+									<option value ="10" id="category">Fantasía</option>
+									<option value ="11" id="category">Ficción General</option>
+									<option value ="12" id="category">Historia Corta</option>
+									<option value ="13" id="category">Hombres Lobo</option>
+									<option value ="14" id="category">Humor</option>
+									<option value ="15" id="category">Misterio / Suspenso</option>
+									<option value ="16" id="category">No Ficción</option>
+									<option value ="17" id="category">Novela histórica</option>
+									<option value ="18" id="category">Novela Juvenil</option>
+									<option value ="19" id="category">Paranormal</option>
+									<option value ="20" id="category">Poesía</option>
+									<option value ="21" id="category">Romance</option>
+									<option value ="22" id="category">Terror</option>
+									<option value ="23" id="category">Vampiros</option>
+									<option value ="24" id="category">#lgbt</option>
+									<option value ="25" id="category">#wattys2017</option>
+									<option value ="26" id="category">#bts</option>
+								</select>
+							</label>
+						</li>
+						<li>
+							<a href="/" title="Crear" class="crear">Crear</a>
+						</li>
+						<li>
+							<label>
+								<select name="comunidad" class="comunidad">
+									<option value="" id="category"> Comunidad</option>
+									<option value ="1" id="category">Clubs</option>
+									<option value ="2" id="category">Los Wattys</option>
+									<option value ="3" id="category">Concursos de escritura</option>
+									<option value ="4" id="category">Escritores</option>
+									<option value ="5" id="category">#JustWriteIt</option>
+								</select>
+							</label>
+						</li>
+						<li>
+							<div class="SearchBar">
+								<input type="text" name="Search_bar" id="Search_bar" placeholder="Busca historias y personas" required>
+								<button type="Submit" id="button"><input type="image" src="IMG/lupita.png" alt="Search" id="lupita"></button>
 							</div>
+						</li>
+						<li>
+							<a href="/" title="Perfil" class="Perfil">Perfil</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+			<section>
+				<div class="fluid-container">
+						<div class="row">
+							<h2>
+							<a href="/" title="Seguir">Seguir Leyendo  > </a>
+							</h2>
 						</div>
-						<div id="slider-arrows">
-							<label for="element1"></label>
-							<label for="element2"></label>
-							<label for="element3"></label>
+						<div class="row">
+							<h3>Encuentra más en tu biblioteca</h3>
+						</div>
+						<div class="slider" id="slider">
+  							<div class="holder">
+   								<div class="slide" id="slide-0"><span class="temp"><img src="IMG/cara.jpg"/></span></div>
+    							<div class="slide" id="slide-1"><span class="temp"><img src="IMG/cara.jpg"/></span></div>
+    							<div class="slide" id="slide-0"><span class="temp"><img src="IMG/cara.jpg"/></span></div>
+    							<div class="slide" id="slide-1"><span class="temp"><img src="IMG/cara.jpg"/></span></div>
+    							<div class="slide" id="slide-2"><span class="temp"><img src="IMG/cara.jpg"/></span></div>
+  							</div>
+						</div>
+					</div>
+			</section>
+			<section>
+					<div class="fluid-container">
+						<div class="row">
+							<h2>
+							<a href="/" title="Recomendaciones">Recomendaciones</a>
+							</h2>
+						</div>
+						<div class="row">
+							<h3>Un nuevo set de historias solo para ti</h3>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="fluid-container">
+						<div class="row">
+							<h2>
+							<a href="/" title="Votación">Porque votaste en Tiempo de Gigantes ></a>
+							</h2>
+						</div>
+						<div class="row">
+							<h3>Creemos que también te gustarán estas historias</h3>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="fluid-container">
+						<div class="row">
+							<h2>
+							<a href="/" title="Actualizaciones">Recientemente Actualizadas</a>
+							</h2>
+						</div>
+						<div class="row">
+							<h3>Historias de tu biblioteca y colecciones</h3>
 						</div>
 					</section>
 				</div>
-			</div>
-		</section>	
-		<section>
-			<div class="fluid-container">
-				<div class="row">
-					<h2>
-					<a href="/" title="Recomendaciones">Recomendaciones</a>
-					</h2>
-				</div>
-				<div class="row">
-					<h3>Un nuevo set de historias solo para ti</h3>
-				</div>
-			</div>
-		</section>
-		<section>
-			<div class="fluid-container">
-				<div class="row">
-					<h2>
-					<a href="/" title="Votación">Porque votaste en Tiempo de Gigantes ></a>
-					</h2>
-				</div>
-				<div class="row">
-					<h3>Creemos que también te gustarán estas historias</h3>
-				</div>
-			</div>
-		</section>
-		<section>
-			<div class="fluid-container">
-				<div class="row">
-					<h2>
-					<a href="/" title="Actualizaciones">Recientemente Actualizadas</a>
-					</h2>
-				</div>
-				<div class="row">
-					<h3>Historias de tu biblioteca y colecciones</h3>
-				</div>
-		</section>
-	</div>
+			</section>
+		</div>
+	</main>
 </body>
 </html>
